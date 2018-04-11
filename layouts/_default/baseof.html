@@ -1,16 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ with $.Site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}">
 	<head>
 		<meta charset="utf-8">
-		<title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+		<title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="robots" content="index, follow">    	
+		<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>		
+		<style>
+		</style>
+		<script src="https://use.fontawesome.com/04332555aa.js"></script>		
+		{{ if .RSSLink }}
+		<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
+		<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">
+		{{ end }}		
 	</head>
-	<body>
-		<!-- Code that all your templates share, like a header -->
-		{{ block "main" . }}
-		<!-- The part of the page that begins to differ between templates -->
-		{{ end }}
-		{{ block "footer" . }}
-		<!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
-		{{ end }}
+	<body class="bg-washed-blue navy ma0 pa3 pa0-ns avenir">
+		<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+		<div class="mw-100 mw7-ns center ph2-ns">
+
+			{{ block "header" . }}
+			<header class="ma0 mv4-ns mv5-l tc">
+				<a href="/" title="Home" rel="index" class="db br3 br--top link bg-animate grow bg-dark-red washed-yellow">
+					<h1 class="ma0 pa0 pv1 avenir f5 lh-copy ttu tracked-mega">
+						Crossbar
+					</h1>
+				</a>
+			</header>
+			{{ end }}			
+			
+			<div class="cf">
+			    <div class="fl w-100 w-30-ns pr4-ns">
+			    	<div class="pv3 tc tr-ns">
+			    		<span class="db">By Shawn Medero</span><br>
+			    		<nav class="b pb2 pb0-ns">
+			    			<a href="#" class="db ttu tracked link dark-red mb2">Archives</a>
+			    			<a href="#" class="db ttu tracked link dark-red">Contact</a>
+			    		</nav>
+			    	</div>
+			    </div>				
+				<div class="fl w-100 w-70-ns">
+			    	<div class="pv3">
+			    		<main id="main" role="main">
+						{{ block "main" . }}
+						{{ end }}    			
+			    		</main>			    		
+			    	</div>
+			    </div>
+			 </div>
+			 
+			{{ block "footer" . }}
+			<footer class="ma0 mv4-ns mv5-l tc">
+				<p>
+					<small class="f6">
+						© {{now.Format "2006"}}. {{ .Site.Params.owner }}
+					</small>
+				</p>
+			</footer>
+			{{ end }}
+			 
+		</div>
 	</body>
 </html>
