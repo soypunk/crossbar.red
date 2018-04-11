@@ -6,6 +6,10 @@ metaDataFormat = "yaml"
 paginate = 15
 enableRobotsTXT = true
 
+[params]
+	owner = "Shawn Medero"
+	description = ""
+
 [sitemap]
 	changefreq = "monthly"
 	priority = 0.5
@@ -20,8 +24,6 @@ enableRobotsTXT = true
 # [taxonomies]
 # 
 # [indexes]
-# 
-# [params]
 # 
 # [author]
 # 
