@@ -5,6 +5,10 @@ title = "Crossbar"
 metaDataFormat = "yaml"
 paginate = 15
 enableRobotsTXT = true
+canonifyUrls = true
+
+[permalinks]
+  posts = "/:year/:month/:slug/"
 
 [params]
 	owner = "Shawn Medero"
@@ -16,7 +20,6 @@ enableRobotsTXT = true
 	filename = "sitemap.xml"
 
 # settings tbd
-# canonifyUrls = 
 # googleAnalytics = 
 #
 # [permalinks]

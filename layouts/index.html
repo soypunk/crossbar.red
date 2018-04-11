@@ -2,9 +2,29 @@
 	<div>
 		{{.Content}}
 	</div>
-	<div>
-		{{ range first 10 .Data.Pages }}
-	    	{{ .Render "summary"}}
+	<div>		
+		{{ $paginator := .Paginate (where .Data.Pages "Section" "in" (slice "posts")) }}	
+		{{ range $paginator.Pages.GroupByDate "Monday, 2 January 2006" }}
+			{{ $page := index .Pages 0 }}{{/* Each group has at least 1 page */}}
+			<section class="pb4">
+				<header>
+					<h2 class="f5 dark-blue mt0 lh-solid">
+						<a href="#" rel="archives" class="link dark-blue underline-hover">
+							<i class="bg-white dark-blue fa fa-fw fa-file-text-o" aria-hidden="true"></i> {{ .Key }}
+						</a>
+					</h2>
+			    </header>
+				
+				<ul class="ma0 pa0 list">
+				{{ range .Pages }}
+					{{ .Render "li" }}
+				{{ end }}
+				</ul>
+			</section>
 		{{ end }}
 	</div>
+{{ end }}
+
+{{ define "pagination" }}
+	{{ partial "pagination.html" . }]
 {{ end }}
