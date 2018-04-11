@@ -6,6 +6,11 @@ metaDataFormat = "yaml"
 paginate = 15
 enableRobotsTXT = true
 
+[sitemap]
+	changefreq = "monthly"
+	priority = 0.5
+	filename = "sitemap.xml"
+
 # settings tbd
 # canonifyUrls = 
 # googleAnalytics = 
@@ -17,8 +22,6 @@ enableRobotsTXT = true
 # [indexes]
 # 
 # [params]
-# 
-# [sitemap]
 # 
 # [author]
 # 
