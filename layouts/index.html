@@ -16,7 +16,7 @@
 			    </header>
 				
 				<ul class="ma0 pa0 list">
-				{{ range .Pages }}
+				{{ range .Pages.ByDate.Reverse }}
 					{{ .Render "li" }}
 				{{ end }}
 				</ul>

@@ -1,6 +1,6 @@
 ---
 title: 
-date: 2018-04-12
+date: 2018-04-12 
 slug: welcome
 2018:
  - "04"
