@@ -9,7 +9,7 @@
 			<section class="pb4">
 				<header>
 					<h2 class="f5 dark-blue mt0 lh-solid">
-						<a href="{{ .Key.Format "/2006/01/02" }}" rel="archives" class="link dark-blue underline-hover">
+						<a href="{{ .dateFormat "/2006/01/02" .Key }}" rel="archives" class="link dark-blue underline-hover">
 							<i class="bg-white dark-blue fa fa-fw fa-file-text-o" aria-hidden="true"></i> {{ .Key }}
 						</a>
 					</h2>
