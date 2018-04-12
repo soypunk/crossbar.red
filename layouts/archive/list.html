@@ -1,0 +1,19 @@
+ {{ define "main" }}
+<main>
+    <article>
+        <header>
+            {{ $date_string := replace .Title "/" "-" }}
+            <h1 class="mt0 lh-solid">Archives: {{ dateFormat "Monday, 2 January 2006" $date_string }}</h1>
+        </header>
+        <section class="nested-copy-line-height nested-links nested-img">
+                {{- .Content -}}
+        </section>
+    </article>
+    <ul class="ma0 pa0 list">
+    <!-- Ranges through content/post/*.md -->
+    {{ range .Pages.ByDate.Reverse }}
+        {{ .Render "li" }}
+    {{ end }}
+    </ul>
+</main>
+{{ end }}
