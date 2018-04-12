@@ -2,8 +2,14 @@
 <main>
     <article>
         <header>
+            <h2 class="f4 dark-blue mt0 lh-solid">
+            {{ if (not .Title eq "Archives") }}
             {{ $date_string := replace .Title "/" "-" }}
-            <h2 class="f4 dark-blue mt0 lh-solid"><i class="bg-white dark-blue fa fa-fw fa-file-text-o" aria-hidden="true"></i> {{ dateFormat "Monday, 2 January 2006" $date_string }}</h2>
+            <i class="bg-white dark-blue fa fa-fw fa-file-text-o" aria-hidden="true"></i> {{ dateFormat "Monday, 2 January 2006" $date_string }}
+            {{ else }}
+            {{ .Title }}
+            {{ end }}
+            </h2>
         </header>
         <section class="nested-copy-line-height nested-links nested-img">
                 {{- .Content -}}
