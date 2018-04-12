@@ -20,12 +20,12 @@ enableRobotsTXT = true
 [taxonomies]
 	tag = "tags"
 	2018 = "2018"
-	day = "days"
+	archive = "archives"
 
 [permalinks]
 	pages = "/:slug"
 	posts = "/:year/:month/:day/:slug/"
-	days = "/:year/:month/:slug/"
+	archives = "/:slug/"
 
 # settings tbd
 # googleAnalytics = 

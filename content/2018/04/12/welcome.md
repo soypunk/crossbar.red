@@ -4,8 +4,8 @@ date: 2018-04-12
 slug: welcome
 2018:
  - "04"
-day:
- - "12"
+archives:
+ - "2018/04/12"
 ---
 Welcome to Crossbar, my home for thoughts about what's going on in the world of hockey inspired by the blogs of yesteryear - particularly the old [Scripting.com format by Dave Winer][1].
 
