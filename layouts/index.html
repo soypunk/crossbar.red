@@ -10,10 +10,12 @@
 				<header>
 					<h2 class="f5 dark-blue mt0 lh-solid">
 						<a href="#" rel="archives" class="link dark-blue underline-hover">
-							<i class="bg-white dark-blue fa fa-fw fa-file-text-o" aria-hidden="true"></i> {{ .Key }}
-                            {{ .First.Date }}
+							<i class="bg-white dark-blue fa fa-fw fa-file-text-o" aria-hidden="true"></i> {{ .Key }}                           
 						</a>
 					</h2>
+                    <pre>
+                    {{ print .Pages 0 .Date }}
+                    </pre>
 			    </header>
 				
 				<ul class="ma0 pa0 list">
