@@ -5,10 +5,8 @@ title = "Crossbar"
 metaDataFormat = "yaml"
 paginate = 15
 enableRobotsTXT = true
-canonifyUrls = true
-
-[permalinks]
-  posts = "/:year/:month/:slug/"
+# can't think of a good reason to set this
+# canonifyUrls = false
 
 [params]
 	owner = "Shawn Medero"
@@ -19,13 +17,16 @@ canonifyUrls = true
 	priority = 0.5
 	filename = "sitemap.xml"
 
+[taxonomies]
+	tag = "tags"
+	archive = "archives"
+
+[permalinks]
+	posts = "/:year/:month/:day/:slug/"
+
 # settings tbd
 # googleAnalytics = 
 #
-# [permalinks]
-#
-# [taxonomies]
-# 
 # [indexes]
 # 
 # [author]
