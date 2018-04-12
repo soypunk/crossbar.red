@@ -3,7 +3,8 @@
     <article>
         <header>
             {{ $date_string := replace .Title "/" "-" }}
-            <h1 class="mt0 lh-solid">Archives: {{ dateFormat "Monday, 2 January 2006" $date_string }}</h1>
+            <h2 class="f4 dark-blue mt0 mb0 lh-solid"><i class="bg-white dark-blue fa fa-fw fa-file-text-o" aria-hidden="true"></i> {{ dateFormat "Monday, 2 January 2006" $date_string }}</h2>
+            <p class="mt0 mb4"><a href="{{ dateFormat "/2006/01/" $date_string }}">Nearby archives: {{ dateFormat "January 2006" $date_string }}</a></p>
         </header>
         <section class="nested-copy-line-height nested-links nested-img">
                 {{- .Content -}}
