@@ -1,0 +1,16 @@
+<article class="mv1{{ if .Title }} bt-0 bl-0 br-0 bb b--dashed b--navy{{ end }}">
+{{ if .Title }}
+    <header>
+        <h3 class="f5 dark-blue lh-copy">
+            {{- .Title -}}
+            <a href="{{ .Permalink }}" rel="bookmark" class="f6 link blue hover-bg-blue hover-light-gray">↩︎</a>
+        </h3>
+    </header>
+{{ end }}
+    <section class="nested-copy-line-height nested-links nested-img">
+	    {{- .Content -}}
+        {{ if (not .Title) }}
+        <a href="{{ .Permalink }}" rel="bookmark" class="f6 link blue bg-animate hover-bg-purple hover-light-gray i">⇜</a>
+        {{ end }}
+	</section>
+</article>
