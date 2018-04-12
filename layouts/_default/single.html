@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<article>
+        {{ if .Title }}
+        <header>
+                <h2>
+                        {{- .Title -}}
+                </h2>
+        </header>
+        {{ end }}
+        
+        <section class="nested-copy-line-height nested-links nested-img">
+                {{- .Content -}}
+        </section>
+
+</article>
