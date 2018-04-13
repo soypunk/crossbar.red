@@ -12,6 +12,6 @@ tags:
 archives:
  - "2018/04/13"
 ---
-Happy Birthday to [Oleg Sosunov][url-ref], who is a very large man (6' 8", 230lbs.)
+Happy Birthday to [Oleg Sosunov][url-ref]; a very large man (6' 8", 230lbs.)
 
 [url-ref]: https://mobile.twitter.com/MJWARRIORS/status/984847182086930432
