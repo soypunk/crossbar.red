@@ -57,9 +57,25 @@
 			3.0 Misc. Fixes
 			--------------------------------------------------------------*/            
 
+			.nested-list ul {
+				list-style: none;
+				padding-left: 1em;
+			}
+
 			.nested-list li {
 				margin-top: 0.5rem;
 				margin-bottom: 1rem;
+			}
+			
+			.nested-list ul > li:before {
+				content: "\25AA";
+				display: block;
+				color: #999;
+				height: 0;
+				width: 0;
+				left: -1em;
+				top: 0;
+				position: relative;
 			}
 
 			.content > p:nth-last-of-type(1) {
