@@ -1,7 +1,7 @@
 ---
 title: Following the Tampa Bay Lightning, Round 1 on Twitter
 date: 2018-04-12T22:47:00-07:00
-slug: tbl-vs-njd-twitter.md
+slug: tbl-vs-njd-twitter
 2018:
  - "04"
 archives:

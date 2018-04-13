@@ -1,7 +1,7 @@
 ---
 title: 
 date: 2018-04-12T11:57:00-07:00
-slug: vegas-pre-game.md
+slug: vegas-pre-game
 2018:
  - "04"
 archives:
