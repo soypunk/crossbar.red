@@ -7,6 +7,10 @@ tags:
 - Dallas Stars
 - coaching
 - Ken Hitchcock
+2018:
+ - "04"
+archives:
+ - "2018/04/13"
 ---
 [Ken Hitchcock][url-ref] has retired after coaching 1536 regular season NHL games and 168 Stanley Cup Playoff games. I had thought he might stick around for one more year.
 
