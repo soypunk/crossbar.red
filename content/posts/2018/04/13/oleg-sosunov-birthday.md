@@ -1,6 +1,6 @@
 ---
 title: ""
-slug: ""
+slug: "oleg-sosunov-birthday"
 date: "2018-04-13T12:53:13-07:00"
 draft: true
 tags:
@@ -12,7 +12,6 @@ tags:
 archives:
  - "2018/04/13"
 ---
-
-Happy Birthday to [Oleg Sosunov][url-ref], who is a very large man.
+Happy Birthday to [Oleg Sosunov][url-ref], who is a very large man (6' 8", 230lbs.)
 
 [url-ref]: https://mobile.twitter.com/MJWARRIORS/status/984847182086930432
