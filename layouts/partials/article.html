@@ -7,7 +7,7 @@
         </h3>
     </header>
 {{ end }}
-    <section class="{{ if (not .Title) }}content mb3 {{end}}nested-copy-line-height nested-links nested-img nested-list nested-list-reset">
+    <section class="{{ if (not .Title) }}content mv3 {{end}}nested-copy-line-height nested-links nested-img nested-list nested-list-reset">
 	    {{- .Content -}}
         {{ if (not .Title) }}
         <a href="{{ .Permalink }}" rel="bookmark" class="di f6 link blue bg-animate hover-bg-purple hover-light-gray i">⇜</a>
